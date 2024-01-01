@@ -1,0 +1,78 @@
+function getRandomInt(max) {
+
+    return Math.floor(Math.random() * max);
+  }
+  
+  var num = getRandomInt(25);
+  console.log(num);
+  // Expected output: 0-24
+  
+  switch (num) {
+    case 0:
+      res.status(200).send("It is certain");
+      break;
+    case 1:
+      res.status(200).send("Reply hazy, try again");
+      break;
+    case 2:
+    case 3:
+      res.status(200).send("Don’t count on it");
+      break;
+    case 4:
+      res.status(200).send("It is decidedly so");
+      break;
+    case 5:
+      res.status(200).send("Ask again later");
+      break;
+    case 6:
+    case 7:
+      res.status(200).send("My reply is no");
+      break;
+    case 8:
+      res.status(200).send("Without a doubt");
+      break;
+    case 9:
+      res.status(200).send("Better not tell you now");
+      break;
+    case 10:
+    case 11:
+      res.status(200).send("My sources say no");
+      break;
+    case 12:
+      res.status(200).send("Yes definitely");
+      break;
+    case 13:
+      res.status(200).send("Cannot predict now");
+      break;
+    case 14:
+    case 15:
+      res.status(200).send("Outlook not so good");
+      break;
+    case 16:
+      res.status(200).send("You may rely on it");
+      break;
+    case 17:
+      res.status(200).send("Concentrate and ask again");
+      break;
+    case 18:
+    case 19:
+      res.status(200).send("Very doubtful");
+      break;
+    case 20:
+      res.status(200).send("As I see it, yes");
+      break;
+    case 21:
+      res.status(200).send("Most likely");
+      break;
+    case 22:
+      res.status(200).send("Outlook good");
+      break;
+    case 23:
+      res.status(200).send("Yes");
+      break;
+    case 24:
+      res.status(200).send("Signs point to yes");
+      break;
+    default:
+      res.status(500).send("Something went wrong!");
+  }
