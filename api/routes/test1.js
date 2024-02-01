@@ -1,6 +1,6 @@
 
 
-const testing = async (req, res) -> {
+const testing = async (req, res) => {
   res.status(200).json({status: active});
 };
 
