@@ -3,14 +3,15 @@ const app = express();
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 
-const eightball = require('./api/routes/8-ball');
-const test = require('./api/routes/test-20');
+// const eightball = require('./api/routes/8-ball');
+// const test = require('./api/routes/test-20');
 
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 
 
-app.use('/8-Ball', eightball);
+//app.use('/8-Ball', eightball);
+
 app.use('/test', test);
 
 app.use((req, res, next) => {
