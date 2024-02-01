@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 
 // const eightball = require('./api/routes/8-ball');
 // const test = require('./api/routes/test-20');
+const testing = require('./api/routes/test1')
 
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
@@ -12,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 //app.use('/8-Ball', eightball);
 
-app.use('/test', test);
+app.get('/', testing);
 
 app.use((req, res, next) => {
     const error = new Error('Not found');
