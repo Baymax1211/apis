@@ -5,7 +5,7 @@ const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 
-const PORT = process.env.PORT || 8403;
+const PORT = 8403;
 async function Init() {
 const app = express();
 
